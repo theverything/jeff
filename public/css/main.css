@@ -11,20 +11,30 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000323}}
+/* apply a natural box layout model to all elements */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000320}}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000329}}
 html,
+body,
 button,
 input,
 select,
 textarea {
-  color: #222; }
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: black; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000334}}
 body {
-  background-color: white;
   color: #222222;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-size: 16;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
   font-smoothing: antialiased;
   font-style: normal;
   font-weight: normal;
@@ -36,12 +46,12 @@ body {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000351}}
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000356}}
 ::selection {
   background: #b3d4fc;
   text-shadow: none; }
@@ -49,7 +59,7 @@ body {
 /*
  * A better looking default horizontal rule
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000365}}
 hr {
   display: block;
   height: 1px;
@@ -61,14 +71,14 @@ hr {
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000378}}
 img {
   vertical-align: middle; }
 
 /*
  * Remove default fieldset styles.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000386}}
 fieldset {
   border: 0;
   margin: 0;
@@ -77,14 +87,14 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000396}}
 textarea {
   resize: vertical; }
 
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003104}}
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -94,13 +104,81 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/_styles\.scss}line{font-family:\000031}}
+h1.super-big {
+  font-size: 4em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/_styles\.scss}line{font-family:\000035}}
+#hello {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/_styles\.scss}line{font-family:\0000313}}
+.img1 {
+  background: url("http://farm3.staticflickr.com/2854/9651712332_905a5b6fc6_h.jpg") no-repeat center center fixed; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/_styles\.scss}line{font-family:\0000317}}
+.img2 {
+  background: url("http://i.imgur.com/9vJDKuE.jpg") no-repeat center center fixed; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/_styles\.scss}line{font-family:\0000321}}
+.img3 {
+  background: url("http://i.imgur.com/oLwkXwt.jpg") no-repeat center center fixed; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/_styles\.scss}line{font-family:\0000325}}
+nav {
+  z-index: 999;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/_styles\.scss}line{font-family:\0000333}}
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/_styles\.scss}line{font-family:\0000337}}
+    nav ul li {
+      display: inline;
+      margin-right: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/_styles\.scss}line{font-family:\0000340}}
+      nav ul li:last-child {
+        margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/_styles\.scss}line{font-family:\0000343}}
+      nav ul li a {
+        font-size: 2em;
+        text-decoration: none;
+        color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/_styles\.scss}line{font-family:\0000347}}
+        nav ul li a:hover {
+          border-bottom: solid green 3px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/_styles\.scss}line{font-family:\0000355}}
+div#content {
+  z-index: 999;
+  margin: auto;
+  width: 70%;
+  position: absolute;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 30%;
+  left: 0;
+  right: 0;
+  color: white; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
  * Image replacement
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003125}}
 .ir {
   background-color: transparent;
   border: 0;
@@ -108,7 +186,7 @@ textarea {
   /* IE 6/7 fallback */
   *text-indent: -9999px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003133}}
 .ir:before {
   content: "";
   display: block;
@@ -118,7 +196,7 @@ textarea {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003144}}
 .hidden {
   display: none !important;
   visibility: hidden; }
@@ -126,7 +204,7 @@ textarea {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003153}}
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -141,7 +219,7 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003164}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003170}}
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -154,7 +232,7 @@ textarea {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003183}}
 .invisible {
   visibility: hidden; }
 
@@ -169,7 +247,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003194}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003200}}
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -177,7 +255,7 @@ textarea {
   display: table;
   /* 2 */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003199}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003205}}
 .clearfix:after {
   clear: both; }
 
@@ -185,7 +263,7 @@ textarea {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003208}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003214}}
 .clearfix {
   *zoom: 1; }
 
@@ -203,7 +281,7 @@ textarea {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003241}}
   * {
     background: transparent !important;
     color: #000 !important;
@@ -211,59 +289,59 @@ textarea {
     box-shadow: none !important;
     text-shadow: none !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003243}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003249}}
   a,
   a:visited {
     text-decoration: underline; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003247}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003253}}
   a[href]:after {
     content: " (" attr(href) ")"; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003251}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003257}}
   abbr[title]:after {
     content: " (" attr(title) ")"; }
 
   /*
    * Don't show links for images, or javascript/internal links
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003261}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003267}}
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003266}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003272}}
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003271}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003277}}
   thead {
     display: table-header-group;
     /* h5bp.com/t */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003276}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003282}}
   tr,
   img {
     page-break-inside: avoid; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003280}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003286}}
   img {
     max-width: 100% !important; }
 
   @page {
     margin: 0.5cm; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003290}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003296}}
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003296}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffhorn\/code\/jeff\/scss\/main\.scss}line{font-family:\00003302}}
   h2,
   h3 {
     page-break-after: avoid; } }

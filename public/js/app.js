@@ -1,11 +1,27 @@
-App = Ember.Application.create();
-
-App.Router.map(function() {
-  // put your routes here
+App = Ember.Application.create({
+  rootElement: "#app"
 });
 
-App.IndexRoute = Ember.Route.extend({
+App.Router.reopen({
+  location: 'history'
+});
+
+App.Router.map(function() {
+  this.resource("about");
+  this.resource("contact");
+  this.resource("portfolio");
+  this.resource("blog");
+});
+
+// App.Router.map(function () {
+//   this.resource("about");
+//   this.resource("posts", function () {
+//     this.resource("post", { path: ":post_id"});
+//   });
+//   this.resource("play");
+// });
+
+App.AboutRoute = Ember.Route.extend({
   model: function() {
-    return ['red', 'yellow', 'blue'];
   }
 });
