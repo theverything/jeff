@@ -31,26 +31,50 @@
         <li>{{#link-to 'portfolio'}}Portfolio{{/link-to}}</li>
       </ul>
     </nav>
-    <div id="content">
-      <h2>Welcome to Ember.js</h2>
-      {{outlet}}
-    </div>
+    {{outlet}}
     </script>
 
     <script type="text/x-handlebars" data-template-name="index">
-      index
     </script>
     <script type="text/x-handlebars" data-template-name="about">
-      about
+      {{#view App.fadeIn contentBinding="this"}}
+        <div id="content">
+          <h2>About</h2>
+          <p>
+            This is the about section.
+          </p>
+        </div>
+      {{/view}}
     </script>
     <script type="text/x-handlebars" data-template-name="contact">
-      contact
+      {{#view App.fadeIn contentBinding="this"}}
+        <div id="content">
+          <h2>Contact</h2>
+          <p>
+            This is the contact section.
+          </p>
+        </div>
+      {{/view}}
     </script>
     <script type="text/x-handlebars" data-template-name="blog">
-      blog
+      {{#view App.fadeIn contentBinding="this"}}
+        <div id="content">
+          <h2>Blog</h2>
+          <p>
+            This is the blog section.
+          </p>
+        </div>
+      {{/view}}
     </script>
     <script type="text/x-handlebars" data-template-name="portfolio">
-      portfolio
+      {{#view App.fadeIn contentBinding="this"}}
+        <div id="content">
+          <h2>Portfolio</h2>
+          <p>
+            This is the portfolio section.
+          </p>
+        </div>
+      {{/view}}
     </script>
 
     <div id="hello" class="img1"></div>

@@ -25,3 +25,9 @@ App.AboutRoute = Ember.Route.extend({
   model: function() {
   }
 });
+
+App.fadeIn = Ember.View.extend({
+  didInsertElement: function() {
+    this.$().hide().fadeIn("slow");
+    }
+});
