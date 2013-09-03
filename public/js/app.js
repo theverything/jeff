@@ -2,9 +2,9 @@ App = Ember.Application.create({
   rootElement: "#app"
 });
 
-App.Router.reopen({
-  location: 'history'
-});
+// App.Router.reopen({
+//   location: 'history'
+// });
 
 App.Router.map(function() {
   this.resource("about");
